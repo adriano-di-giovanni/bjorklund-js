@@ -2,6 +2,30 @@
 
 A Javascript Universal Module implementation of the Bjorklund algorithm.
 
+## Installation
+
+### npm
+
+```
+$ npm install bjorklund-js
+```
+
+### bower
+
+```
+$ bower install bjorklund-js
+```
+
+## Usage
+
+```javascript
+var
+    steps = 5,
+    pulses = 2;
+
+console.log(bjorklund(steps, pulses)); // [ 0, 1, 0, 1, 0 ]
+```
+
 ## License
 
 This project is licensed under the MIT license.
