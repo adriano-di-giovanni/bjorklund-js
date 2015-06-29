@@ -1,0 +1,21 @@
+{
+  "name": "bjorklund-js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/adriano-di-giovanni/bjorklund-js",
+  "authors": [
+    "Adriano Di Giovanni <me@adrianodigiovanni.com>"
+  ],
+  "description": "A Javascript Universal Module implementation of the Bjorklund algorithm",
+  "main": "bjorklund.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "euclidean",
+    "rhythm",
+    "bjorklund"
+  ],
+  "license": "MIT"
+}

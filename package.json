@@ -1,7 +1,7 @@
 {
   "name": "bjorklund-js",
   "version": "0.1.0",
-  "description": " A Javascript Universal Module implementation of the Bjorklund algorithm",
+  "description": "A Javascript Universal Module implementation of the Bjorklund algorithm",
   "main": "bjorklund.js",
   "directories": {
     "test": "test"
@@ -14,5 +14,18 @@
   "devDependencies": {
     "chai": "*",
     "mocha": "*"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adriano-di-giovanni/bjorklund-js.git"
+  },
+  "keywords": [
+    "euclidean",
+    "rhythm",
+    "bjorklund"
+  ],
+  "bugs": {
+    "url": "https://github.com/adriano-di-giovanni/bjorklund-js/issues"
+  },
+  "homepage": "https://github.com/adriano-di-giovanni/bjorklund-js"
 }
