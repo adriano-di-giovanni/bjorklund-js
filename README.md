@@ -2,6 +2,10 @@
 
 A Javascript Universal Module implementation of the Bjorklund algorithm.
 
+## License
+
+This project is licensed under the MIT license.
+
 ## Resources
 
 * E. Bjorklund, [The Theory of Rep-Rate Pattern Generation in the SNS Timing System](https://ics-web.sns.ornl.gov/timing/Rep-Rate%20Tech%20Note.pdf)
