@@ -64,12 +64,16 @@
 
       l;
 
-    if (m > k) {
-      l = euclid(m, k, qs, rs);
-      build(qs, rs, l, 0, 1, gs);
+    if (m !== 0) {
+      if (m > k) {
+        l = euclid(m, k, qs, rs);
+        build(qs, rs, l, 0, 1, gs);
+      } else {
+        l = euclid(k, m, qs, rs);
+        build(qs, rs, l, 1, 0, gs);
+      }
     } else {
-      l = euclid(k, m, qs, rs);
-      build(qs, rs, l, 1, 0, gs);
+      return Array(n).fill(1);
     }
 
     return gs;
