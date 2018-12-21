@@ -36,4 +36,7 @@ describe('bjorklund', function () {
   it('E(4,4)', function () { expect(t(b(4, 4))).to.contain('1111'); })
   it('E(5,5)', function () { expect(t(b(5, 5))).to.contain('11111'); })
   it('E(1,1)', function () { expect(t(b(1, 1))).to.contain('1'); })
+  it('E(4,8)', function () { expect(t(b(8, 4))).to.contain('10101010'); })
+  it('E(5,10)', function () { expect(t(b(10, 5))).to.contain('1010101010'); })
+  it('E(4,6)', function () { expect(t(b(6, 4))).to.contain('110110'); })
 });
