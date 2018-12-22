@@ -78,7 +78,9 @@
       l;
 
     if (m !== 0) {
-      if (n % k !== 0) {
+      if (k === 0) {
+        return Array(n).fill(0);
+      } else if (n % k !== 0) {
         if (m > k) {
           l = euclid(m, k, qs, rs);
           build(qs, rs, l, 0, 1, gs);
