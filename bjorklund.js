@@ -53,6 +53,19 @@
     }
   }
 
+  function interlace (a, b) {
+    // interlace values in a
+    return a.reduce(
+      function(interlaced, x, i) {
+        return interlaced.concat([x, b[i]]);
+      },
+      []
+    ).concat(
+      // then remaining items in b
+      b.slice(a.length)
+    );
+  }
+
   function bjorklund(n, k) {
 
     var
@@ -64,12 +77,22 @@
 
       l;
 
-    if (m > k) {
-      l = euclid(m, k, qs, rs);
-      build(qs, rs, l, 0, 1, gs);
+    if (m !== 0) {
+      if (k === 0) {
+        return Array(n).fill(0);
+      } else if (n % k !== 0) {
+        if (m > k) {
+          l = euclid(m, k, qs, rs);
+          build(qs, rs, l, 0, 1, gs);
+        } else {
+          l = euclid(k, m, qs, rs);
+          build(qs, rs, l, 1, 0, gs);
+        }
+      } else {
+        return interlace(Array(k).fill(1), Array(n - k).fill(0));
+      }
     } else {
-      l = euclid(k, m, qs, rs);
-      build(qs, rs, l, 1, 0, gs);
+      return Array(n).fill(1);
     }
 
     return gs;
