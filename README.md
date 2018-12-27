@@ -44,3 +44,7 @@ First release
 ### 0.1.1
 
 Add minified version
+
+## 0.1.2
+
+Fixed algorithm for N==k, n % k == 0, k == 0. Thanks [@colinsullivan](https://github.com/colinsullivan)

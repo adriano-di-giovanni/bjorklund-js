@@ -1,12 +1,13 @@
 {
   "name": "bjorklund-js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A Javascript Universal Module implementation of the Bjorklund algorithm",
   "main": "bjorklund.min.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "build": "gulp build",
     "test": "mocha --reporter spec test"
   },
   "author": "Adriano Di Giovanni <me@adrianodigiovanni.com> (http://adrianodigiovanni.com/)",
